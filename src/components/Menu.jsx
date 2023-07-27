@@ -3,9 +3,9 @@ import { NavLink } from "react-router-dom";
 const Menu = () => {
   return (
     <div>
-      <div className="navbar bg-neutral text-neutral-content ">
+      <div className="navbar min-w-full border border-red-600 bg-white bg-opacity-20 backdrop-blur-lg rounded drop-shadow-lg">
         <div className="flex-1">
-          <ul className="menu menu-vertical lg:menu-horizontal bg-base-200 rounded-box">
+          <ul className="menu menu-vertical max-w- lg:menu-horizontal bg-base-200 rounded-box">
             <li>
               <NavLink to="/" className={({isActive})=>isActive?"active-item":""}>Home</NavLink>
             </li>
