@@ -1,13 +1,16 @@
 import React from "react";
-import Menu from "./components/Menu";
 import NotFoundPage from "./Pages/NotFoundPage";
+import { HashRouter, Route, Routes } from "react-router-dom";
+import HomePage from "./Pages/HomePage";
 
 const App = () => {
   return (
-    <div>      
-      <Menu/>
-      <h1>This is APP page</h1>
-      <NotFoundPage/>
+    <div>
+      <HashRouter>
+        <Routes>
+          <Route path="/" element={<HomePage/>} />
+        </Routes>
+      </HashRouter> 
     </div>
   );
 };
