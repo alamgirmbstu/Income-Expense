@@ -1,13 +1,14 @@
 import Menu from "../components/Menu";
-import layout from './../layouts/layout';
+import Layout from "./../layouts/layout";
+import layout from "./../layouts/layout";
 
 const HomePage = () => {
   return (
-    <layout>
-    <div> 
-      <h1>This is Home Page</h1>
-    </div>
-    </layout>
+    <Layout>
+      <div>
+        <h1 className="text-lg">This is Home Page</h1>
+      </div>
+    </Layout>
   );
 };
 
