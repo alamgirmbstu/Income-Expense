@@ -14,7 +14,7 @@ const Layout = (props) => {
       <div className="min-h-[10vh]">
         <Menu />
       </div>
-      <div className="min-h-[60vh] flex">{props.children}</div>
+      <div className="min-h-[60vh] content-center flex">{props.children}</div>
       <div className="min-h-[25vh]">
         <Footer />
       </div>
